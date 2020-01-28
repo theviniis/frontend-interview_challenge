@@ -34,6 +34,7 @@ Pode utilizar a biblioteca <a href="https://create-react-app.dev/docs/getting-st
     -   Ao clicar em um dos **personagens, planetas ou espécies** em suas páginas, abrir uma página exclusiva daquele item com o máximo de informações possíveis;
     -   Dentro da página com as informações específicas de cada item, listar necessariamente os **personagens, planetas e espécies** correspondente aquele item;
     -   Ao clicar neste item correspondente, levar para a página interna daquele item clicado.
+-   Este item não é obrigatório, mas caso queira deixar seu projeto mais interessante. Faça a seguinte adaptação: - Na tela de cada item específico, ao invés de listar os **personagens, planetas e espécies** correspondentes, faça um jogo de adivinhação em que o usuário precisa tentar acertar quais são os **personagens, planetas e espécies** correspondentes. _Exemplo: na página do Darth Vader o usuário precisa acertar qual é sua espécie e seu planeta de origem. Na página do planeta Alderaan, adivinhar quais personagens vivem nele se houverem. Na página da espécie Hutt, adivinhar qual o planeta de origem e os personagens._ Aqui você pode inventar como quiser, pode fazer listar algumas opções para o usuário tentar acertar, pode pedir para que ele escreva os palpites em um campo e fazer a validação como quiser.
 
 ## Adicionais que serão avaliados
 
@@ -41,7 +42,7 @@ Pode utilizar a biblioteca <a href="https://create-react-app.dev/docs/getting-st
 -   Utilização de alguma biblioteca de estilização (recomendamos o styled-components)
 -   Testes unitários e de integração (recomendamos o react-testing-library)
 -   Configuração de padrão de código (recomendamos o eslint e o prettier)
--   Utilização de ícones (recomendamos o fontawesome)
+-   Utilização de ícones se necessário (recomendamos o fontawesome)
 -   Utilização de ES6+
 -   Utilização de React Hooks
 
