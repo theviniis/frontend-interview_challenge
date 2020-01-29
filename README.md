@@ -30,7 +30,11 @@ It’s natural to feel stressed during a test, so don’t panic. We wrote down s
 - [ ] Keep the big picture in mind
 
 # How can I apply for this opportunity?
+
 Fork this repository and pull request your solution. 
+
+Build a greate READ.ME explaining how to run your code and which technologies did you choose.
+
 You can open an issue at any time if you have any questions.
 
 # Let's get started 
@@ -90,7 +94,7 @@ Let's connect them all and create the webpages:
 - Add the capability of changing avatar
 
 
-It would be great to see these more deailt of your code, but we would love to hear your proposed list:
+It would be great to see these more details of your code, but we would love to hear your proposed list:
 - A fake login web page using a JWT token strategy (http://jwt.io)
 - Use of styled-componets (https://styled-components.com/)
 - DOM testing (https://github.com/testing-library/react-testing-library)
