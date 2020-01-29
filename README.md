@@ -60,41 +60,24 @@ Use a wrapper for rest connection to the API (https://swapi.co/documentation). Y
 You must connect and get data from PEOPLE, PLANETS and SPECIES 
  
  ## Step Two
- 
-Build some essencial components for:
 
-- Display short info of a person
-- Display all attributes of a person
-- Display all attributes of a planet
-- Display all attributes of a species
-- List people using infinity scroll
-- List people of a planet
-- List people of a species
-- List all planets without infinity scroll
-- List all species without infinity scroll
-- Search people by any attribute
-- Filter people by planet and species
-
-## Step Three
-
-It's show time! 
+It's show time! Remember, build essencial components for each reusable part of your app, such us lists and detail infos.
 
 Let's connect them all and create the webpages:
  
  - display all people of the social media in a list, filtering and searching
- - click on each people and open details (all attributes) 
+ - click on each person and open details (all attributes) 
  - display all planets
  - click on each planet and open details (all attributes) and show all people vinculated with 
  - display all species
  - click on each species and open details (all attributes) and show all people vinculated with 
  
-## Step Four - Final
+## Step Three - Final
 
 - There is no avatar in the API database, so, we would like to see how you implement a local storage of avatars.
 - Add the capability of changing avatar
 
-
-It would be great to see these more details of your code, but we would love to hear your proposed list:
+It would be great to see these libraries being used in your code, but we would love to know what you can suggest for us:
 - A fake login web page using a JWT token strategy (http://jwt.io)
 - Use of styled-componets (https://styled-components.com/)
 - DOM testing (https://github.com/testing-library/react-testing-library)
