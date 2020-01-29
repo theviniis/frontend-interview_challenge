@@ -84,7 +84,7 @@ Let's connect them all and create the webpages:
  - display all species
  - click on each species and open details (all attributes) and show all people vinculated with 
  
-## Step Four
+## Step Four - Final
 
 - There is no avatar in the API database, so, we would like to see how you implement a local storage of avatars.
 - Add the capability of changing avatar
@@ -96,3 +96,9 @@ It would be great to see these more deailt of your code, but we would love to he
 - DOM testing (https://github.com/testing-library/react-testing-library)
 - Code patterns (https://eslint.org/ and https://prettier.io)
 - Vector Icon Set (https://fontawesome.com/)
+
+
+## BONUS
+
+- Create a docker image
+- Deploy and share it on a cloud service: Azure, Amazon Web Services, or Google Cloud Plataform 
