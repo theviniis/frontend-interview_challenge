@@ -73,19 +73,12 @@ Let's connect them all and create the webpages:
  - display all species
  - click on each species and open details (all attributes) and show all people vinculated with 
  
-## Step Three - Final
+## Step Three
 
 - There is no avatar in the API database, so, we would like to see how you implement a local storage of avatars.
 - Add the capability of changing avatar
 
-
-## Which are the main aspects we'll be evaluating in your code:
-
-- Clean Code
-- Componetization
-- Responsivity
-- How far can you go through the challenge
-- Bug count
+## Step Four
 
 It would be great to see these libraries being used in your code, but we would love to know what you can suggest for us:
 - A fake login web page using a JWT token strategy (http://jwt.io)
@@ -94,8 +87,10 @@ It would be great to see these libraries being used in your code, but we would l
 - Code patterns (https://eslint.org/ and https://prettier.io)
 - Vector Icon Set (https://fontawesome.com/)
 
+## Which are the main aspects we'll be evaluating in your code:
 
-## BONUS
-
-- Create a docker image
-- Deploy and share it on a cloud service: Azure, Amazon Web Services, or Google Cloud Plataform 
+- Clean Code
+- Componetization
+- Responsivity
+- How far can you go through the challenge
+- Bug count
