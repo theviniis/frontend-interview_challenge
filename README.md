@@ -15,7 +15,7 @@ We welcome highly skilled people who want to build amazing products and will be 
 
 ## What should you expect in this code challenge?
 
-This challenge is the beginning of your job application at bornlogic. 
+This challenge is the beginning of your job application at bornlogic. It is intended to all candidates, regardless of experience 
 
 After you are done, we will review your code, give you feedback and proceed to the next steps of your job application.
 
@@ -52,6 +52,7 @@ Your first objective as a frontend developer is to help us grow our socialmedia 
 - React + Redux
 - ES6+
 - React Hooks
+
 You can also use this lib <a href="https://create-react-app.dev/docs/getting-started/" target='_blank'>create-react-app</a> if you want to.
 
 ## Step One 
@@ -76,6 +77,15 @@ Let's connect them all and create the webpages:
 
 - There is no avatar in the API database, so, we would like to see how you implement a local storage of avatars.
 - Add the capability of changing avatar
+
+
+## Which are the main aspects we'll be evaluating in your code:
+
+- Clean Code
+- Componetization
+- Responsivity
+- How far can you go through the challenge
+- Bug count
 
 It would be great to see these libraries being used in your code, but we would love to know what you can suggest for us:
 - A fake login web page using a JWT token strategy (http://jwt.io)
