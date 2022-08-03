@@ -87,14 +87,17 @@
     .nav__list {
       @include flex(row-reverse, 0.5rem);
     }
+    
     &__profile {
       flex-direction: column;
     }
+    
+    .logo {
+    display: none;
+    }
   }
 
-  .logo {
-    display: none;
-  }
+ 
 }
 
 .logo {
