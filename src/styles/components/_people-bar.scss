@@ -1,0 +1,42 @@
+.people-bar {
+  animation: fade-left 250ms forwards;
+  @include flex(column, 1rem);
+  position: relative;
+  z-index: 9;
+
+  .search-bar,
+  &__custom__list {
+    z-index: 20;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $c-bg;
+    inset: 0;
+  }
+
+  &.mobile {
+    display: none;
+    position: absolute;
+    inset: 0;
+    > *:first-child {
+      margin-top: $header-height;
+    }
+  }
+
+  &.is-active {
+    display: flex;
+  }
+}
+
+@keyframes fade-left {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: initial;
+  }
+}

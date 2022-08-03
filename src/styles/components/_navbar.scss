@@ -1,0 +1,104 @@
+.nav {
+  --padding: 0.5rem 1rem;
+  @include flex(column, 0.5rem);
+  font-size: 1.25rem;
+  height: 100vh;
+  background-color: $c-bg;
+
+  a {
+    @extend .transition;
+    padding: var(--padding);
+    background-color: unset;
+  }
+
+  .logo:hover,
+  &__item:hover,
+  &__profile:hover {
+    @include hover(lighten, $c-bg, 10%);
+  }
+
+  &__list {
+    @include flex(column, 0.5rem);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    @extend .card;
+
+    &.active {
+      font-weight: 700;
+      background-color: lighten($c-bg, 10%);
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+
+    .avatar {
+      --width: 2.5rem;
+    }
+
+    .profile__info {
+      @include flex(column, 0);
+      font-size: 0.9375rem;
+    }
+
+    .see-more {
+      width: 24px;
+      fill: $c-fg;
+      &:hover {
+        background-color: initial;
+      }
+    }
+  }
+
+  @media (max-width: 1026px) {
+    & {
+      align-items: center;
+    }
+    .section {
+      display: none;
+    }
+    &__profile {
+      .profile__info,
+      .see-more {
+        display: none;
+      }
+    }
+  }
+
+  &.mobile {
+    height: unset;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+
+    &,
+    .nav__list {
+      @include flex(row-reverse, 0.5rem);
+    }
+    &__profile {
+      flex-direction: column;
+    }
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+.logo {
+  max-width: 8rem;
+  min-width: 2rem;
+  margin-block-end: 0.5rem;
+}

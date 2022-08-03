@@ -1,96 +1,69 @@
-![alt text](http://branding.bornlogic.com.s3-website-sa-east-1.amazonaws.com/static/files-download/logo/logo-roxo.svg 'Bornlogic')
+# Twitter Wars
 
+Twitter Wars é uma rede social do Star Wars inspirada no Twitter criada para o teste de Desenvolvedor React.
 
-# Interview FRONT-END code challenge
+## Stack utilizada
 
-**bornlogic** is a technology startup focused on building digital marketing products. We build a platform to orchestrate thousands of teams creating content everyday. Also, our technology stack handles millions of transactions per day!
+**Front-end:** React, react-router-dom, history, SASS
 
-We work with people that are passionated about technology, forming a great team of engineers and valuable customers.
+## Roadmap
 
-## Who we want on our Team
+- Definir um layout para a aplicação;
 
-We work hard, play hard and thrive at bornlogic! if you belong to startup way of life, for sure this is a perfect opportunity!
+- Criar um hook que faça um fetch em uma determinada url; A partir do retorno da url verifica se existe um results.next; Caso tenha, ele faz um novo fetch passando a url results.next até retornar null;
 
-We welcome highly skilled people who want to build amazing products and will be proud to show them to their friends and family! We are also looking for entry-level engineers who want to learn and practice software development using the best practices used by many players in the marketfield.
+- Definir as rotas da aplicação;
 
-## What should you expect in this code challenge?
+- Criar um pseudo feed exibindo os posts a partir de um objeto;
 
-This challenge is the beginning of your job application at bornlogic. It is intended to all candidates, regardless of experience 
+- Criar um componente que realiza um novo post armazenando o mesmo em um estado;
 
-After you are done, we will review your code, give you feedback and proceed to the next steps of your job application.
+- Renderizar um component funcional reutilizavel que exibe todas as caracteriesticas do objeto (people, planets e especies);
 
+- Criar um componente que caso o retorno do objeto acima seja um array, realize um novo fetch para cada item desse array renderizando então uma tag summary > details com as informações (pessoas residentes do planeta, filmes, species e veículos);
 
-## tips
-It’s natural to feel stressed during a test, so don’t panic. We wrote down some good old tips that may calm you down.
+- Realizar pequenos ajustes na responsividade;
 
-- [ ] Relax yourself mentally and physically
-- [ ] Consider alternative solutions
-- [ ] If you are stuck, start with the brute force solution
-- [ ] Plan out the full solution before you code
-- [ ] Keep the big picture in mind
+## Melhorias
 
-# How can I apply for this opportunity?
+- Refatorar o componente de lista para que realize um fetch na informação 'homeworld' e exiba o dado de forma correta;
 
-Fork this repository and pull request your solution. 
+- Exibir um avatar para cada personagem;
 
-Build a greate READ.ME explaining how to run your code and which technologies did you choose.
+- Adicionar a capacidade de alterar o avatar;
 
-You can open an issue at any time if you have any questions.
+- Criar uma tela de login fake usando JWT;
 
-# Let's get started 
+## Rodando localmente
 
-Let's pretend we launched a "Social Media for Star Wars characters". 
+Clone o projeto
 
-Your first objective as a frontend developer is to help us grow our socialmedia by building the first visual components and webpages.
+```bash
+  git clone https://github.com/theviniis/swars.git
+```
 
-> Keep Calm, do as much as you can, but keep in mind that you have up to 7 days to complete the challenge.
+Entre no diretório do projeto
 
+```bash
+  cd swars
+```
 
-## Development Requirements
+Instale as dependências
 
-### Which technologies can I use?
-- React + Redux
-- ES6+
-- React Hooks
+```bash
+  npm install
+```
 
-You can also use this lib <a href="https://create-react-app.dev/docs/getting-started/" target='_blank'>create-react-app</a> if you want to.
+Inicie o servidor
 
-## Step One 
- 
-Use a wrapper for rest connection to the API (https://swapi.co/documentation). You can use an existed one or create your own.
-You must connect and get data from PEOPLE, PLANETS and SPECIES 
- 
- ## Step Two
+```bash
+  npm run start
+```
 
-It's show time! Remember, build essencial components for each reusable part of your app, such us lists and detail infos.
+## Deploy
 
-Let's connect them all and create the webpages:
- 
- - display all people of the social media in a list, filtering and searching
- - click on each person and open details (all attributes) 
- - display all planets
- - click on each planet and open details (all attributes) and show all people vinculated with 
- - display all species
- - click on each species and open details (all attributes) and show all people vinculated with 
- 
-## Step Three
+Para fazer o deploy desse projeto rode
 
-- There is no avatar in the API database, so, we would like to see how you implement a local storage of avatars.
-- Add the capability of changing avatar
-
-## Step Four
-
-It would be great to see these libraries being used in your code, but we would love to know what you can suggest for us:
-- A fake login web page using a JWT token strategy (http://jwt.io)
-- Use of styled-componets (https://styled-components.com/)
-- DOM testing (https://github.com/testing-library/react-testing-library)
-- Code patterns (https://eslint.org/ and https://prettier.io)
-- Vector Icon Set (https://fontawesome.com/)
-
-## Which are the main aspects we'll be evaluating in your code:
-
-- Clean Code
-- Componetization
-- Responsivity
-- How far can you go through the challenge
-- Bug count
+```bash
+  npm build
+```

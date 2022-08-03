@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  cursor: pointer;
+  background: $c-primary;
+  outline: none;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  color: $c-bg;
+  border: none;
+  font-weight: 700;
+  @extend .transition;
+
+  &:hover {
+    box-shadow: darken($c-primary, 20%) 999em 0px 0px 0px inset;
+  }
+}

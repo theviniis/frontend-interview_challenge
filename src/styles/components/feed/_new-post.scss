@@ -1,0 +1,49 @@
+.new-post {
+  @include flex(row, 1rem);
+
+  &__form {
+    @include flex(column, 0.5rem);
+
+    &,
+    textarea {
+      width: 100%;
+    }
+
+    textarea {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      resize: none;
+      color: $c-fg;
+      font-size: 1.25rem;
+      @extend .transition;
+
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 9999px;
+        background: $c-primary;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        @include hover(darken, $c-primary, 40%);
+      }
+    }
+
+    .form__controls {
+      @include flex(row, 1rem);
+      justify-content: flex-end;
+
+      svg {
+        width: 1.5rem;
+        border-radius: 0;
+
+        &:hover {
+          background-color: unset;
+        }
+      }
+    }
+  }
+}

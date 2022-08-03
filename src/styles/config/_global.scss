@@ -1,0 +1,56 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: minmax(60px, max-content) minmax(380px, 1fr) minmax(
+      200px,
+      350px
+    );
+
+  @media (max-width: 900px) {
+    display: block;
+  }
+
+  & > * {
+    padding: 1rem;
+  }
+}
+
+.card {
+  background-color: lighten($c-bg, 5%);
+  padding: 1rem;
+  border-radius: 1rem;
+
+  &:hover {
+    background-color: lighten($c-bg, 7%);
+  }
+}
+
+.user-name {
+  font-weight: 700;
+  width: max-content;
+}
+
+.user-url {
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.transition {
+  transition: ease-in 150ms;
+}
+
+.icon {
+  box-sizing: initial;
+  padding: 0.5rem;
+  fill: $c-primary;
+  min-width: 1.5rem;
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  border-radius: 50%;
+  @extend .transition;
+}
+
+.google-icon {
+  font-size: 1.75rem;
+  @extend .transition;
+}
